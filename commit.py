@@ -46,3 +46,15 @@ class Repositorio:
             commit_atual = commit_atual.pai
 
         return quantidade
+
+repositorio = Repositorio("es_tf_08", "Nicoly Thomaz de Oliveira - 6326018")
+
+repositorio.log()
+
+repositorio.commitar("Cria o projeto")
+repositorio.commitar("Adiciona o README")
+repositorio.commitar("Corrige o titulo do README")
+
+repositorio.log()
+
+print(repositorio.total_de_commits())
